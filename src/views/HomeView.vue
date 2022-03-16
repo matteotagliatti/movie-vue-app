@@ -9,8 +9,9 @@
         <div class="detail">
           <h3>Dune</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
-            officiis blanditiis inventore.
+            Feature adaptation of Frank Herbert's science fiction novel about
+            the son of a noble family entrusted with the protection of the most
+            valuable asset and most vital element in the galaxy.
           </p>
         </div>
       </router-link>
