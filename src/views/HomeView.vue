@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="card">
-      <router-link to="/movie/tt0409591">
+      <router-link to="/movie/tt1160419">
         <img
           src="https://posterspy.com/wp-content/uploads/2020/04/DuneFINAL-1200x609.jpg"
           alt="feature-img"
