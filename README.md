@@ -1,24 +1,5 @@
-# movie-vue-app
+# Movie Vue App
 
-## Project setup
-```
-npm install
-```
+![screenshot](screenshot.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+A simple Vue.js app made for learning the framework and how to work with API.
