@@ -16,8 +16,8 @@
       </router-link>
     </div>
 
-    <form @submit.prevent="" class="search-box">
-      <input type="text" placeholder="Search for a movie" />
+    <form @submit.prevent="SearchMovies()" class="search-box">
+      <input type="text" placeholder="Search for a movie" v-model="search" />
       <input type="submit" value="Search" />
     </form>
 
@@ -26,7 +26,26 @@
 </template>
 
 <script>
-export default {};
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const search = ref("");
+    const movies = ref([]);
+
+    const SearchMovies = () => {
+      if (search.value != "") {
+        console.log(search.value);
+      }
+    };
+
+    return {
+      search,
+      movies,
+      SearchMovies,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
