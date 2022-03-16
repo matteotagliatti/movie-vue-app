@@ -18,6 +18,7 @@
 
 body {
   font-family: "Fira Sans", sans-serif;
+  color: white;
   background-color: #131418;
 
   &::selection {
