@@ -11,10 +11,12 @@
 import { ref, onBeforeMount } from "vue";
 import { useRoute } from "vue-router";
 import env from "@/env.js";
+
 export default {
   setup() {
     const movie = ref({});
     const route = useRoute();
+
     onBeforeMount(() => {
       fetch(
         `http://www.omdbapi.com/?apikey=${env.apikey}&i=${route.params.id}&plot=full`
@@ -24,6 +26,7 @@ export default {
           movie.value = data;
         });
     });
+
     return {
       movie,
     };
