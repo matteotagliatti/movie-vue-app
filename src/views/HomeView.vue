@@ -126,7 +126,7 @@ export default {
 
       &[type="submit"] {
         background-color: #42b883;
-        font-size: 20px;
+        font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         transition: 0.4s;
