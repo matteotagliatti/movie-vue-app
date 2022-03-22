@@ -4,4 +4,4 @@
   <img src="screenshot.png" />
 </div>
 
-A simple Vue.js app made for learning the framework and how to work with API.
+A simple Vue.js app made for learning the framework and how to work with API. Made with the [OMDb API](http://www.omdbapi.com/).
