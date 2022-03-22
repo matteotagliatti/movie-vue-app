@@ -1,3 +1,3 @@
 export default {
-  apikey: process.env.VUE_APP_API,
+  apikey: "e3ac0636", // API Keys should NOT be public, but this is a simple demo to view it online
 };
