@@ -10,7 +10,6 @@
 <script>
 import { ref, onBeforeMount } from "vue";
 import { useRoute } from "vue-router";
-import env from "@/env.js";
 
 export default {
   setup() {
@@ -19,7 +18,7 @@ export default {
 
     onBeforeMount(() => {
       fetch(
-        `https://www.omdbapi.com/?apikey=${env.apikey}&i=${route.params.id}&plot=full`
+        `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_API}&i=${route.params.id}&plot=full`
       )
         .then((response) => response.json())
         .then((data) => {

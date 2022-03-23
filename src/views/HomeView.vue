@@ -41,7 +41,6 @@
 
 <script>
 import { ref } from "vue";
-import env from "@/env.js";
 
 export default {
   setup() {
@@ -50,7 +49,9 @@ export default {
 
     const SearchMovies = () => {
       if (search.value != "") {
-        fetch(`https://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
+        fetch(
+          `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_API}&s=${search.value}`
+        )
           .then((response) => response.json())
           .then((data) => {
             movies.value = data.Search;
